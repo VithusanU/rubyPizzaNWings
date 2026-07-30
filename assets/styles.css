@@ -222,3 +222,358 @@ font-style: italic;
     }
 
     }
+
+/* ------------------------------------------------------------------
+   Page content — brand colours taken from the Ruby promo cards:
+   chalkboard dark (rgb(26,20,15)), ruby red, mustard yellow, cream
+------------------------------------------------------------------ */
+
+.page {
+    background: rgb(26, 20, 15);
+    color: whitesmoke;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+    padding: 4rem 1.5rem;
+    background:
+        linear-gradient(rgba(26, 20, 15, 0.75), rgba(26, 20, 15, 0.9)),
+        url("./images/Re-edited Front Shop.jpg") center/cover no-repeat;
+}
+
+.hero__content h1 {
+    font-size: 3rem;
+    background-image: linear-gradient(red, orange, red);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.hero__content p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: aliceblue;
+    margin-bottom: 0.5rem;
+}
+
+.hero__tags {
+    color: rgb(245, 197, 24);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn--red {
+    background: rgb(211, 32, 17);
+    color: whitesmoke;
+}
+
+.btn--red:hover {
+    background: rgb(245, 197, 24);
+    color: rgb(26, 20, 15);
+}
+
+.btn--outline {
+    border: 2px solid rgb(245, 197, 24);
+    color: rgb(245, 197, 24);
+}
+
+.btn--outline:hover {
+    background: rgb(245, 197, 24);
+    color: rgb(26, 20, 15);
+}
+
+/* Info strip: address / hours / phone */
+.info-strip {
+    background: rgb(211, 32, 17);
+    padding: 1.5rem 0;
+}
+
+.info-strip .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+}
+
+.info-strip__item h3 {
+    color: rgb(245, 197, 24);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+}
+
+.info-strip__item p,
+.info-strip__item a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.info-strip__item a:hover {
+    color: rgb(26, 20, 15);
+}
+
+/* Generic section headings */
+.section {
+    padding: 4rem 0;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: rgb(245, 197, 24);
+    margin-bottom: 0.5rem;
+}
+
+.section__subtitle {
+    text-align: center;
+    color: aliceblue;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+}
+
+/* Specials / promo card gallery */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: rgb(38, 30, 22);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card__body {
+    padding: 1rem 1.2rem 1.4rem;
+    text-align: center;
+}
+
+.card__body h3 {
+    color: whitesmoke;
+    margin-bottom: 0.4rem;
+}
+
+.card__body p {
+    color: rgb(200, 190, 180);
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+}
+
+.card__price {
+    color: rgb(245, 197, 24);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Menu page */
+.menu-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    background: rgb(38, 30, 22);
+    border: 1px solid rgb(211, 32, 17);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.menu-nav a:hover {
+    background: rgb(211, 32, 17);
+}
+
+.menu-section {
+    margin-bottom: 3rem;
+    scroll-margin-top: 180px;
+}
+
+.menu-section__title {
+    display: inline-block;
+    background: rgb(245, 197, 24);
+    color: rgb(26, 20, 15);
+    font-size: 1.4rem;
+    padding: 6px 18px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px dashed rgba(245, 197, 24, 0.35);
+}
+
+.menu-item__name {
+    font-size: 1.1rem;
+    color: whitesmoke;
+}
+
+.menu-item__badge {
+    background: rgb(211, 32, 17);
+    color: whitesmoke;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    padding: 2px 8px;
+    margin-left: 6px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.menu-item__desc {
+    color: rgb(200, 190, 180);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.menu-item__price {
+    color: rgb(245, 197, 24);
+    font-size: 1.15rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* About page */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.about__text h2 {
+    color: rgb(245, 197, 24);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about__text p {
+    color: aliceblue;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.hours-table td {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed rgba(245, 197, 24, 0.35);
+    color: aliceblue;
+}
+
+.hours-table td:last-child {
+    text-align: right;
+    color: rgb(245, 197, 24);
+}
+
+/* Footer */
+.footer {
+    background: black;
+    padding: 2.5rem 0 1.5rem;
+    text-align: center;
+}
+
+.footer p {
+    color: rgb(200, 190, 180);
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.footer a {
+    color: rgb(245, 197, 24);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .hero__content h1 {
+        font-size: 2.2rem;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .info-strip .container {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+}

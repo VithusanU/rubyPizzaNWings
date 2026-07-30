@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="https://kit.fontawesome.com/ad46d35fee.js" crossorigin="anonymous"></script>
+
+    <title>About Us | Ruby Pizza N' Wings</title>
 </head>
-<body>
-    
+
+<body class="page">
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div></div>
+            <img id="navbar__logo" src="./assets/images/Logo.png" alt="Ruby Pizza N' Wings logo" srcset="">
+            <div id="nameSlogan">
+                <h1 id="name"> Ruby Pizza N' Wings </h1>
+                <h2 id="slogan"> Indulge, savor, and celebrate the art of flavours...</h2>
+            </div>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__btn">
+                    <a href="./index.html" class="button">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="./Menu.html" class="button">
+                        Menu
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="./AboutUs.html" class="button">
+                        About Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <h2 class="section__title">About Us</h2>
+            <p class="section__subtitle">A neighbourhood kitchen in the heart of the Upper Beaches</p>
+
+            <div class="about">
+                <img src="./assets/images/Re-edited Front Shop.jpg"
+                    alt="Ruby Pizza N' Wings storefront at 162 Main Street, Toronto">
+                <div class="about__text">
+                    <h2>Where Pizza Meets the World</h2>
+                    <p>Ruby Pizza N' Wings is a family-run restaurant at 162 Main Street in Toronto's east end. We
+                        started with a simple idea: take the pizza and wings everyone loves, and bring in the flavours
+                        we grew up with.</p>
+                    <p>That's why our menu goes beyond the classics. Alongside pepperoni pizza and honey garlic wings,
+                        you'll find butter chicken pizza, curry chicken pizza, shawarma plates, souvlaki, poutine, and
+                        fresh pasta &mdash; Asian and international cuisine, made from scratch daily.</p>
+                    <p>Whether it's a date night, a family game night, or just a quick slice, we've got a combo for
+                        it. Come say hi, or get it delivered hot to your door.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section__title">Visit Us</h2>
+            <div class="about">
+                <div class="about__text">
+                    <h2><i class="fa-solid fa-clock"></i> Hours</h2>
+                    <table class="hours-table">
+                        <tr>
+                            <td>Monday &ndash; Sunday</td>
+                            <td>11:00 a.m. &ndash; 9:00 p.m.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="about__text">
+                    <h2><i class="fa-solid fa-location-dot"></i> Contact</h2>
+                    <p>162 Main St, Toronto, ON M4E 2V8</p>
+                    <p>Phone: <a href="tel:+14168000823" style="color: rgb(245, 197, 24);">416-800-0823</a></p>
+                    <p><a href="https://www.ubereats.com/ca/store/ruby-pizza-n-wings/yXwueHCQV8ON_TCOdP3NLA"
+                            target="_blank" rel="noopener" class="btn btn--red"
+                            style="margin-top: 0.5rem;">Order on Uber Eats</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Ruby Pizza N' Wings &mdash; 162 Main St, Toronto, ON M4E 2V8</p>
+            <p>Open daily 11:00 a.m. &ndash; 9:00 p.m. &bull; <a href="tel:+14168000823">416-800-0823</a></p>
+            <p><a href="https://www.ubereats.com/ca/store/ruby-pizza-n-wings/yXwueHCQV8ON_TCOdP3NLA" target="_blank"
+                    rel="noopener">Order delivery on Uber Eats</a></p>
+        </div>
+    </footer>
+
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
